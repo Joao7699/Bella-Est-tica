@@ -40,8 +40,8 @@
             }
            }else{
 
-?><
-            <header>Sign Up</header>
+?>
+            <header>Cadastro</header>
             <form action="" method="post">
                 <div class="field input">
                     <label for="username">Nome completo</label>

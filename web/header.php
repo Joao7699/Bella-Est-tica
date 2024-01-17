@@ -12,8 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Condensed:ital,wght@1,600&family=Roboto:ital@1&display=swap" rel="stylesheet">
-    <title>Portfólio</title>
-    <link rel="stylesheet" href="../stylesite/styles.css">
+    <title>Bella Estética</title>
+    <link rel="stylesheet" href="../stylesite/styless.css">
 
 </head>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
@@ -35,18 +35,29 @@
                 <li><a href="#">Início</a></li>
                 <li><a href="#">Especialidades</a></li>
                 <li><a href="#about">Sobre</a></li>
-                <li><a href="#">Tratamentos</a></li>
+                <li><a href="#treatments">Tratamentos</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
     </nav>
 
+    <?php 
+            if(!isset($_SESSION['user_id'])){
+          ?>
+
         <div class="btn-contato">
-            <a href="../login/login.php">
+            <ul>
+                <li><a href="../login/login.php">
                 <button>Area do paciente<i class="fa-regular fa-calendar-days"></i>
                 </button>
-            </a>
+            </a></li>
         </div><!--button-->
-
+         
+          <?php } else { ?>
+            <li><a class="btn btn-color1 my-2 my-sm-0 text-light ml-2" href="../admin/index.php">
+            <button>Ir para o dashboard<i class="fa-regular fa-calendar-days"></i>
+                </button>
+            </a></li>
+          <?php } ?>
 
     </div><!--interface-->
 </header>
@@ -55,7 +66,7 @@
         <div class="slide-container active">
             <div class="slide">
                 <div class="contentproje">
-                    <h3>Bela Estética<span>.</span></h3>
+                    <h3>Bella Estética<span>.</span></h3>
                     <p>"Bem-vindo à nossa clínica de estética, um refúgio dedicado à sua beleza e bem-estar.
                         Aqui, combinamos expertise e cuidado para proporcionar tratamentos personalizados que
                         realçam a sua beleza natural.</p>

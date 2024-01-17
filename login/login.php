@@ -49,7 +49,7 @@
                 </div>
 
                 <div class="field input">
-                    <label for="senha">Password</label>
+                    <label for="senha">Senha</label>
                     <input type="password" name="senha" id="senha" autocomplete="off" required>
                 </div>
 
