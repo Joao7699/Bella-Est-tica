@@ -178,7 +178,7 @@
 <section class="blogs" id="blogs">
 
 
-<h1 class="product">Rejuvenscimento<span>Facial</span> </h1>
+<h1 class="sobre">Rejuvenscimento<span>Facial</span> </h1>
 
 <div class="box-container">
 
@@ -235,7 +235,7 @@
 <!--sobre e imagens grandes section-->
 <section class="about" id="about">
 
-<h1 class="treatments" > <span>Solicite </span> Agora </h1>
+<h1 class="sobre" > <span>Solicite </span> Agora </h1>
 
 <div class="row">
      
@@ -270,7 +270,7 @@
 
 <section class="blogs" id="blogs">
 
-<h1 class="treatments">Redução de <span>gordura</span> </h1>
+<h1 class="sobre">Redução de <span>gordura</span> </h1>
 
 <div class="box-container">
 

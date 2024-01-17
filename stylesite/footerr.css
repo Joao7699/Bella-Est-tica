@@ -76,7 +76,7 @@
 .contact .row form .inputBox span{
     color:#f7f7f7;
     font-size: 2rem;
-    padding-left: 2rem;
+    padding-left: 5rem;
     
 }
 
@@ -125,7 +125,7 @@
 }
 
 .footer .links a{
-    padding:.7rem 2rem;
+    padding:.9rem 2rem;
     color:#000000;
     border:var(--border);
     font-size: 2rem;

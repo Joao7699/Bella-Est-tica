@@ -35,7 +35,7 @@
                 <li><a href="#">Início</a></li>
                 <li><a href="#">Especialidades</a></li>
                 <li><a href="#about">Sobre</a></li>
-                <li><a href="#treatments">Tratamentos</a></li>
+                <li><a href="#products">Tratamentos</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
     </nav>
