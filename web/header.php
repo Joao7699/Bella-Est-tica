@@ -39,25 +39,27 @@
                 <li><a href="#contact">Contato</a></li>
             </ul>
     </nav>
-
     <?php 
             if(!isset($_SESSION['user_id'])){
           ?>
 
         <div class="btn-contato">
-            <ul>
-                <li><a href="../login/login.php">
-                <button>Area do paciente<i class="fa-regular fa-calendar-days"></i>
+           
+            <a href="../login/login.php">
+                <button>Área do paciente<i class="fa-regular fa-calendar-days"></i>
                 </button>
             </a></li>
-        </div><!--button-->
+        </div>
          
           <?php } else { ?>
-            <li><a class="btn btn-color1 my-2 my-sm-0 text-light ml-2" href="../admin/index.php">
-            <button>Ir para o dashboard<i class="fa-regular fa-calendar-days"></i>
-                </button>
-            </a></li>
+
+            <a class="btn btn-color1 my-2 my-sm-0 text-light ml-2"  href="../admin/index.php">
+               <button>Área do Administrador<i class="fa-regular fa-calendar-days"></i>
+               </button>
+              </a>
+
           <?php } ?>
+        
 
     </div><!--interface-->
 </header>
