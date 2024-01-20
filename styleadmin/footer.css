@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-radius: border-box;
+}
+
+footer{
+    background: #000;
+    text-decoration-color: white;
+}
+
+footer .h5{
+    text-align: center;
+}

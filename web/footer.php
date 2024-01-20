@@ -101,8 +101,9 @@
 <section class="footer" id="share">
 
 <div class="share">
-    <a href="#" class="fab fa-facebook-f"></a>
+    <a href="#" class="fab fa-whatsapp"></i></a>
     <a href="#" class="fab fa-instagram"></a>
+    <a href="#" class="fab fa-twitter "></a>
    
 
 </div>
@@ -111,8 +112,6 @@
     <a href="#">Início</a>
     <a href="#">Sobre</a>
     <a href="#">Tratamentos</a>
-    <a href="#">especialidades</a>
-    <a href="agends.php">Agendar</a>
 </div>
 
 <div class="credit">Criado por <span>Lorrana, Marcos, Kaique e João</span> </div>

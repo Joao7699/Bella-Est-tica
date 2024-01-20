@@ -1,10 +1,16 @@
+<?php
+
+  include_once('header.php');
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- Incluindo o Font Awesome para ícones -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styleadmin/index.css">
     <title>Dashboard do Admin</title>
 </head>
 <body>
@@ -21,9 +27,6 @@
                         <a class="nav-link" href="#"><i class="fa fa-home"></i> Início <span class="sr-only">(Página atual)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-user"></i> Perfil</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fa fa-sign-out"></i> Sair</a>
                     </li>
                 </ul>
@@ -34,6 +37,11 @@
     <!-- Conteúdo do dashboard -->
     <div class="container">
         <div class="row">
+            <!-- Sidebar do dashboard -->
+            <div class="col-md-3">
+        <?php
+                    include_once('menu_sidebar.php');
+                ?>
             <!-- Sidebar do dashboard -->
             <div class="col-md-3">
                 <div class="list-group">
@@ -50,7 +58,7 @@
                         <div class="card text-white bg-primary mb-3">
                             <div class="card-header"><i class="fa fa-users"></i> Usuários</div>
                             <div class="card-body">
-                                <h5 class="card-title">150</h5>
+                                <h5 class="card-title">2</h5>
                                 <p class="card-text">Usuários cadastrados no site.</p>
                             </div>
                         </div>
@@ -66,27 +74,23 @@
                                         <tr>
                                             <th>Nome</th>
                                             <th>E-mail</th>
-                                            <th>Data</th>
+                                            <th>Data de registro</th>
                                         </tr>
                                     </thead>
                                     <tbody>
+
                                         <tr>
-                                            <td>João Silva</td>
-                                            <td>joao@gmail.com</td>
-                                            <td>01/01/2023</td>
+                                            <td>Shin</td>
+                                            <td>Shin@gmail.com</td>
+                                            <td>2024-01-15 20:44:28</td>
                                         </tr>
                                         <tr>
-                                            <td>Maria Santos</td>
-                                            <td>maria@gmail.com</td>
-                                            <td>02/01/2023</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Pedro Oliveira</td>
-                                            <td>pedro@gmail.com</td>
-                                            <td>03/01/2023</td>
+                                            <td>kakak</td>
+                                            <td>kakak@gmail.com</td>
+                                            <td>2024-01-17 21:24:07</td>
                                         </tr>
                                         <!-- Adicione mais linhas conforme necessário -->
-                                    </tbody>
+                                   </tbody>
                                 </table>
                             </div>
                         </div>
@@ -104,20 +108,17 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                   
                                         <tr>
-                                            <td>João Silva</td>
-                                            <td>01/01/2023</td>
+                                            <td>Shin</td>
+                                            <td>2024-01-25 17:00</td>
                                         </tr>
                                         <tr>
-                                            <td>Maria Santos</td>
-                                            <td>02/01/2023</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Pedro Oliveira</td>
-                                            <td>03/01/2023</td>
+                                            <td>kakak</td>
+                                            <td>2024-01-25 16:00</td>
                                         </tr>
                                         <!-- Adicione mais linhas conforme necessário -->
-                                    </tbody>
+                                    </tbody>                             
                                 </table>
                             </div>
                         </div>
@@ -129,3 +130,8 @@
 
 </body>
 </html>
+
+<?php
+  include_once('footer.php');
+
+?>

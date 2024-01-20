@@ -33,34 +33,35 @@
     <nav class="menu-desktop">
             <ul>
                 <li><a href="#">Início</a></li>
-                <li><a href="#">Especialidades</a></li>
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#products">Tratamentos</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
     </nav>
     <?php 
-            if(!isset($_SESSION['user_id'])){
-          ?>
-
+            
+            if(isset($_SESSION['user_id'])){
+            ?>
+          
         <div class="btn-contato">
            
-            <a href="../login/login.php">
-                <button>Área do paciente<i class="fa-regular fa-calendar-days"></i>
-                </button>
-            </a></li>
+        <a href="../admin/index.php">
+            <button>  
+                <?php 
+        if($_SESSION['user_level'] == 'admin'){
+            echo   "Ir para dahsboard";
+
+        } else {
+            echo   "Ir para o login";
+                    }
+                ?>   
+        <a href="../login/login.php"> 
+
+                <i class="fa-regular fa-calendar-days"></i>
+            </button>
+            </a>
         </div>
-         
-          <?php } else { ?>
-
-            <a class="btn btn-color1 my-2 my-sm-0 text-light ml-2"  href="../admin/index.php">
-               <button>Área do Administrador<i class="fa-regular fa-calendar-days"></i>
-               </button>
-              </a>
-
-          <?php } ?>
-        
-
+    <?php } ?>
     </div><!--interface-->
 </header>
 <main>
@@ -81,7 +82,7 @@
             <div class="slide">
                 <div class="contentproje">
                     <h3>Conheça nossos tratamentos<span>.</span></h3>
-                    <p>Microagulhamento,micro-pigmentação,remoção de manchas,botox,ácido hialurônico,radiofrequência,lipoaspiração a laser,lipocavitação e entre outros...</p>
+                    <p>Microagulhamento,micro-pigmentação,<br>remoção de manchas,botox,ácido hialurônico,radiofrequência,lipoaspiração a laser,<br>lipocavitação e entre outros...</p>
                     
                 </div>
             </div>

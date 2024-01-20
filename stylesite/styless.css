@@ -259,6 +259,20 @@ header .btn-contato button{
     
 }
 
+
+    /* Faz com que o botão apareça na direita 
+    margin-left: auto;
+    margin-top: 1em;  */
+
+
+header .button{
+    /* Faz com que o botão apareça na direita */
+    margin-left: auto;
+    margin-top: 1em;
+    padding: 10rem;
+    padding-right: 10vh;
+}
+
 header a:hover {
     color:#8dc9fa;
     transform: scale(1.09);
