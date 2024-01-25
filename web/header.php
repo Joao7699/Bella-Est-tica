@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+include_once('../login/config.php');
+$con = mysqli_connect("localhost", "root", "", "database") or die("Conexão não estabelecida");
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -31,37 +40,28 @@
                   </div><!--logo-->
   
     <nav class="menu-desktop">
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#products">Tratamentos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#products">Tratamentos</a></li>
+            <li><a href="#contact">Contato</a></li>
+            <li><a href="../login/login.php">Login</a></li>
+        </ul>
     </nav>
+
     <?php 
-            
-            if(isset($_SESSION['user_id'])){
-            ?>
-          
-        <div class="btn-contato">
-           
-        <a href="../admin/index.php">
-            <button>  
-                <?php 
-        if($_SESSION['user_level'] == 'admin'){
-            echo   "Ir para dahsboard";
+        $textButton = "Dashboard";
 
-        } else {
-            echo   "Ir para o login";
-                    }
-                ?>   
-        <a href="../login/login.php"> 
+        if(isset($_SESSION['user_id'])){
+            if($_SESSION['user_level'] == 'admin'){
+                $textButton = "Área do Administrador";
+            }
+        }
+    ?>
 
-                <i class="fa-regular fa-calendar-days"></i>
-            </button>
-            </a>
-        </div>
-    <?php } ?>
+<a class="btn-contact" id="btn-contato" href="../admin/index.php">
+     <?php echo  "$textButton"  ?>
+    </a>
     </div><!--interface-->
 </header>
 <main>

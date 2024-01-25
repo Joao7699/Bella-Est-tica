@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-if(!isset($_SESSION['user_id'])){
+if(!isset($_SESSION['email'])){
     header('Location: ../login/login.php');
 }
 
@@ -21,26 +21,26 @@ $con = mysqli_connect("localhost", "root", "", "database") or die("Conexão não
     <title>Dashboard</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.php">
-                Bella Estética | Painel de Controle
-            </a>
-            <button class="button-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-user"></i> <?= $_SESSION['user_name'] ?? 'Usuário' ?>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="../login/logout.php"><i class="fa fa-sign-out"></i> Sair </a>
-            </div>
-           </li>
-         </ul>
-        </div>
+    <header>
+    <div class="interface"><!--interface-->
+        
+        <div class="logo"><!--logo-->
+
+                <a href="#../web/index.php">
+                        <img  src="../img/logo07.png" alt="logo" width="115px" >
+                </a>
+
+          </div><!--logo-->
+
+<nav class="menu-desktop">
+<ul>
+<div class="container">
+           
+    <?= $_SESSION['user_id'] ?? 'Usuário' ?></a></li>
+    <li><a href="../login/logout.php">Sair</a></li>
 </div>
+</ul>
 </nav>
 
+</div><!--interface-->
+</header>

@@ -2,14 +2,14 @@
 
 include_once('../admin/header.php');
 
-$query = "SELECT * FROM agend WHERE user_id = " . $_SESSION['user_id'];
+$query = "SELECT * FROM agends WHERE user_id" ;
 
-$result = mysqli_query($connection, $query);
+$result = mysqli_query($con, $query);
 
-$users = array();
+$agends = array();
 
 if(mysqli_num_rows($result) > 0){
-    $users = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    $agends = mysqli_fetch_all($result, MYSQLI_ASSOC);
 }
 
 ?>
@@ -44,7 +44,7 @@ if(mysqli_num_rows($result) > 0){
                         <thead>
                             <tr>
                                 <th>Nome</th>
-                                <th>Email</th>
+                                <th>Titulo</th>
                                 <th>Data da consulta</th>
                                 <th>Ações</th>
                             </tr>
@@ -55,7 +55,7 @@ if(mysqli_num_rows($result) > 0){
 
                             <tr>
                                 <td><?php echo $user['nome']; ?></td>
-                                <td><?php echo $user['email']; ?></td>
+                                <td><?php echo $user['title']; ?></td>
                                 <td><?php echo date('d/m/Y', strtotime($user['scheduled_to']) ); ?></td>
                                 <td>
                                     <div class="dropdown">
@@ -86,4 +86,5 @@ if(mysqli_num_rows($result) > 0){
 
 <?php
 include_once('..admin/footer.php');
+
 ?>

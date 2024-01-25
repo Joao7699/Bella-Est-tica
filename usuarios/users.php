@@ -2,9 +2,9 @@
 
 include_once('../admin/header.php');
 
-$query = "SELECT * FROM users WHERE user_id = " . $_SESSION['user_id'];
+$query = "SELECT * FROM users WHERE id = " ;
 
-$result = mysqli_query($connection, $query);
+$result = mysqli_query($con, $query);
 
 $users = array();
 

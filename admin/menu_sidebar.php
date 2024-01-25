@@ -1,3 +1,14 @@
+<?php
+
+if(isset($_SESSION['user_id'])){
+    header('Location: ../login/login.php');
+}
+
+include_once('../login/config.php');
+$con = mysqli_connect("localhost", "root", "", "database") or die("Conexão não estabelecida");
+
+
+?>
 
 <div class="list-group">
     <a href="index.php" class="list-group-item list-group-item-action "><i class="fa fa-tachometer-alt"></i> Dashboard</a>

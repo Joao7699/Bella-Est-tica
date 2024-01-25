@@ -110,8 +110,10 @@
 
 <div class="links">
     <a href="#">Início</a>
-    <a href="#">Sobre</a>
-    <a href="#">Tratamentos</a>
+    <a href="#about">Sobre</a>
+    <a href="#contact">Contato</a>
+    <a href="#products">Tratamentos</a>
+    <a href="../login/login.php">Login</a>
 </div>
 
 <div class="credit">Criado por <span>Lorrana, Marcos, Kaique e João</span> </div>

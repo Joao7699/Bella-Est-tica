@@ -6,7 +6,10 @@
     font-family: 'Poppins',sans-serif;
 }
 body{
-    background: #e4e9f7;
+    background-image: url('../img/grupo-de-mulheres-tirando-uma-selfie-juntas.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 .container{
     display: flex;
@@ -134,4 +137,10 @@ main{
     border-radius: 5px;
     margin-bottom: 10px;
     color: red;
+}
+.header button{
+    display: fixed;
+    margin: 0;
+    left: 0;
+    
 }
